@@ -1,0 +1,30 @@
+.nav-menu {
+  background-color: lighten($bg-color, 5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav-item {
+  display: inline;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-link {
+  color: $primary-color;
+  font-size: 1.2rem;
+  @include easeOut;
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  padding: 0.5rem;
+
+  &:hover {
+    background-color: $bg-color;
+  }
+}
+
+.current {
+  color: $secondary-color;
+}

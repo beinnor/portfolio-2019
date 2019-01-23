@@ -1,0 +1,119 @@
+@import "config";
+@import "navmenu";
+@import "responsive";
+
+// General stuff
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: $bg-color;
+  color: $text-color;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 1rem 2rem 3rem 2rem;
+}
+
+// Headings
+h1,
+h2 {
+  margin: 0;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+}
+
+// Links
+a {
+  text-decoration: none;
+}
+
+// Home page
+#home {
+  padding-top: 20%;
+  text-align: center;
+  h1 {
+    color: $primary-color;
+  }
+
+  .secondary {
+    color: $secondary-color;
+  }
+}
+
+// Portfolio
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  img {
+    width: 100%;
+    border: 3px $primary-color solid;
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+      border-color: $secondary-color;
+      @include easeOut;
+    }
+  }
+  .btn {
+    display: block;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    &:hover {
+      background: $secondary-color;
+    }
+  }
+
+  .btn-dark {
+    @extend .btn;
+    background: darken($bg-color, 10);
+    color: #fff;
+  }
+
+  .btn-light {
+    @extend .btn;
+    background: lighten($bg-color, 10);
+    color: #fff;
+  }
+}
+
+// Footer
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($bg-color, 10);
+  color: $text-color;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.copy {
+  padding-top: 1rem;
+}
