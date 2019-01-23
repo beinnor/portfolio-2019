@@ -121,6 +121,18 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+
+  a {
+    color: $secondary-color;
+  }
+
+  a:visited {
+    color: $secondary-color;
+  }
+
+  a:hover {
+    color: $primary-color;
+  }
 }
 
 .copy {
