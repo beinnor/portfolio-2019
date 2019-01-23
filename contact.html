@@ -3,6 +3,44 @@ layout: default
 title: Home
 ---
 
-<main id="contact">
-  <h1>{{ "Contact Me" | downcase }}</h1>
+<main>
+  <div id="contact-container">
+    <form id="contactform" action="" method="post">
+      <h1>Contact me</h1>
+      <fieldset>
+        <input
+          placeholder="Name"
+          name="name"
+          type="text"
+          tabindex="1"
+          required
+          autofocus
+        />
+      </fieldset>
+      <fieldset>
+        <input
+          placeholder="Email"
+          name="_replyto"
+          type="email"
+          tabindex="2"
+          required
+        />
+      </fieldset>
+      <input type="hidden" name="_subject" value="Portfolio contact" />
+      <input type="text" name="_gotcha" style="display:none" />
+      <fieldset>
+        <textarea
+          placeholder="Message here...."
+          name="message"
+          tabindex="5"
+          required
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <button type="submit" id="contact-submit" data-submit="...Sending">
+          Submit
+        </button>
+      </fieldset>
+    </form>
+  </div>
 </main>

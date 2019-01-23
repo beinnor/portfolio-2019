@@ -1,0 +1,77 @@
+#contact-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+
+#contactform {
+  background: $primary-color;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contactform h1 {
+  display: block;
+  color: $bg-color;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contactform input[type="text"],
+#contactform input[type="email"],
+#contactform textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 0 0 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#contactform input[type="text"]:hover,
+#contactform input[type="email"]:hover,
+#contactform textarea:hover {
+  @include easeOut;
+  border: 1px solid $secondary-color;
+}
+
+#contactform textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contactform button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: $bg-color;
+  color: $primary-color;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+#contactform button[type="submit"]:hover {
+  background: $secondary-color;
+  color: #fff;
+  @include easeOut;
+}
+
+#contactform button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#contactform input:focus,
+#contactform textarea:focus {
+  outline: 0;
+  border: 1px solid $secondary-color;
+}

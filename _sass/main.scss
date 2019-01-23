@@ -1,6 +1,7 @@
 @import "config";
 @import "navmenu";
 @import "responsive";
+@import "form";
 
 // General stuff
 * {
@@ -56,6 +57,14 @@ a {
 
   .secondary {
     color: $secondary-color;
+  }
+}
+
+// About page
+#about {
+  img {
+    float: left;
+    margin: 0 2rem 0 1rem;
   }
 }
 
