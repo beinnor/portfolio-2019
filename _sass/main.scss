@@ -1,4 +1,5 @@
 @import "config";
+@import "typography";
 @import "navmenu";
 @import "responsive";
 @import "form";
@@ -14,8 +15,6 @@ body {
   background: $bg-color;
   color: $text-color;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -24,27 +23,6 @@ body {
 main {
   flex: 1;
   padding: 1rem 2rem 3rem 2rem;
-}
-
-// Headings
-h1,
-h2 {
-  margin: 0;
-  font-weight: 400;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
-h2 {
-  margin-bottom: 2rem;
-  padding: 0.2rem 1rem;
-}
-
-// Links
-a {
-  text-decoration: none;
 }
 
 // Home page
