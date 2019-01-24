@@ -1,0 +1,32 @@
+// Footer
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: $bg-color-dark;
+  color: $text-color-light;
+  padding: 0;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background: lighten($bg-color-dark, 10);
+  padding: 1rem;
+
+  a {
+    color: $text-color-light;
+  }
+
+  a:visited {
+    color: $text-color-light;
+  }
+
+  a:hover {
+    color: $text-color-dark;
+  }
+}
+
+.copy {
+  padding-top: 1rem;
+}

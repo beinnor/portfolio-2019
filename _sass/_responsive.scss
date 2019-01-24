@@ -8,6 +8,12 @@
 
 // Tablets & Small Laptops
 @include mediaMd {
+  .nav-menu {
+    display: none;
+  }
+  .nav-button {
+    display: initial;
+  }
 }
 
 // Smartphones

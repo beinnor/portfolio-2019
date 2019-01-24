@@ -1,8 +1,10 @@
-$primary-color: #cacaca;
-$secondary-color: #164abb;
-$text-color: #8a8a8a;
-$bg-color: #2a2a2a;
-$footer-height: 100px;
+$primary-color: #193a94;
+$secondary-color: #009b2c;
+$text-color-dark: #333;
+$text-color-light: #fff;
+$bg-color-light: rgb(223, 223, 223);
+$bg-color-dark: #333;
+//$footer-height: 100px;
 
 @mixin easeOut {
   transition: all 0.5s ease-out;

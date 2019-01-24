@@ -1,19 +1,21 @@
 #contact-container {
   width: 80%;
   margin: 0 auto;
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 
 #contactform {
-  background: $primary-color;
+  background: darken($bg-color-light, 5);
   padding: 25px;
+  border: 1px solid $bg-color-dark;
   border-radius: 5px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 #contactform h1 {
   display: block;
-  color: $bg-color;
+  color: $primary-color;
+  margin-bottom: 1rem;
 }
 
 fieldset {
@@ -28,7 +30,7 @@ fieldset {
 #contactform input[type="email"],
 #contactform textarea {
   width: 100%;
-  border: 1px solid #ccc;
+  border: 1px solid $bg-color-dark;
   background: #fff;
   margin: 0 0 5px;
   padding: 10px;
@@ -39,7 +41,7 @@ fieldset {
 #contactform input[type="email"]:hover,
 #contactform textarea:hover {
   @include easeOut;
-  border: 1px solid $secondary-color;
+  border: 1px solid $primary-color;
 }
 
 #contactform textarea {
@@ -52,8 +54,8 @@ fieldset {
   cursor: pointer;
   width: 100%;
   border: none;
-  background: $bg-color;
-  color: $primary-color;
+  background: $bg-color-dark;
+  color: $text-color-light;
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
@@ -61,7 +63,7 @@ fieldset {
 }
 
 #contactform button[type="submit"]:hover {
-  background: $secondary-color;
+  background: $primary-color;
   color: #fff;
   @include easeOut;
 }
@@ -73,5 +75,5 @@ fieldset {
 #contactform input:focus,
 #contactform textarea:focus {
   outline: 0;
-  border: 1px solid $secondary-color;
+  border: 1px solid $primary-color;
 }

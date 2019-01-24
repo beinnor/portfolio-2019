@@ -3,6 +3,7 @@
 @import "navmenu";
 @import "responsive";
 @import "form";
+@import "footer";
 
 // General stuff
 * {
@@ -11,9 +12,14 @@
   margin: 0;
 }
 
+h1 {
+  color: $primary-color;
+  margin-bottom: 1rem;
+}
+
 body {
-  background: $bg-color;
-  color: $text-color;
+  background: $bg-color-light;
+  color: $text-color-dark;
   margin: 0;
   display: flex;
   min-height: 100vh;
@@ -27,7 +33,7 @@ main {
 
 // Home page
 #home {
-  padding-top: 20%;
+  margin-top: 20vh;
   text-align: center;
   h1 {
     color: $primary-color;
@@ -46,20 +52,20 @@ main {
   }
 }
 
-// Portfolio
 .projects {
+  margin-top: 2vh;
   display: grid;
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
 
   img {
     width: 100%;
-    border: 3px $primary-color solid;
+    border: 3px $bg-color-dark solid;
     opacity: 0.8;
 
     &:hover {
       opacity: 1;
-      border-color: $secondary-color;
+      border-color: $primary-color;
       @include easeOut;
     }
   }
@@ -69,50 +75,24 @@ main {
     padding: 0.5rem 1rem;
     border: 0;
     margin-bottom: 0.3rem;
-    &:hover {
-      background: $secondary-color;
-    }
   }
 
   .btn-dark {
     @extend .btn;
-    background: darken($bg-color, 10);
-    color: #fff;
+    background: $bg-color-dark;
+    color: $text-color-light;
+    &:hover {
+      background: lighten($bg-color-dark, 20);
+    }
   }
 
   .btn-light {
     @extend .btn;
-    background: lighten($bg-color, 10);
-    color: #fff;
+    background: $bg-color-light;
+    border: 2px solid $bg-color-dark;
+    color: $text-color-dark;
+    &:hover {
+      background: darken($bg-color-light, 20);
+    }
   }
-}
-
-// Footer
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: darken($bg-color, 10);
-  color: $text-color;
-}
-
-.icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-
-  a {
-    color: $secondary-color;
-  }
-
-  a:visited {
-    color: $secondary-color;
-  }
-
-  a:hover {
-    color: $primary-color;
-  }
-}
-
-.copy {
-  padding-top: 1rem;
 }
