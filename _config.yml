@@ -10,3 +10,8 @@ defaults:
       type: ""
     values:
       layout: "default"
+
+plugins:
+        - jekyll-feed
+        - jekyll-seo-tag
+        - jekyll-sitemap
