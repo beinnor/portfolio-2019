@@ -50,7 +50,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background: rgba($bg-color-dark, 0.8);
+  background: rgba(#000, 0.95);
   overflow: auto;
   z-index: 2;
   @include easeOut;
