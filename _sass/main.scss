@@ -1,7 +1,7 @@
 @import "config";
 @import "typography";
 @import "navmenu";
-@import "responsive";
+
 @import "form";
 @import "footer";
 
@@ -46,12 +46,33 @@ main {
 
 // About page
 #about {
+  width: 80%;
+
   img {
     float: left;
-    margin: 0 2rem 0 1rem;
+    margin: 2rem;
+    border-radius: 5px;
+  }
+
+  p {
+    margin: 2rem;
+  }
+
+  h2 {
+    margin-bottom: 3rem;
+  }
+
+  .skillset {
+    font-size: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem 1rem;
+    justify-items: center;
   }
 }
 
+// Projects page
 .projects {
   margin-top: 2vh;
   display: grid;
@@ -96,3 +117,13 @@ main {
     }
   }
 }
+
+// 404 page
+#fool {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@import "responsive";

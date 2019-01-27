@@ -1,9 +1,19 @@
 ---
 layout: default
-title: Blog(ish)
+title: Blog
 ---
 
 <main id="blog">
   <h1>{{ "Blog!" | downcase }}</h1>
-  <p>Blog/tutorials/articles or other stuff here</p>
+  <p>Nothing useful here yet</p>
+
+  <ul>
+    {% for post in site.posts %}
+
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+
+    {% endfor %}
+  </ul>
 </main>

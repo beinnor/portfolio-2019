@@ -14,6 +14,30 @@
   .nav-button {
     display: initial;
   }
+
+  // About page
+  #about {
+    width: 100%;
+    text-align: center;
+
+    p {
+      width: 60%;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    img {
+      float: none;
+      margin: auto;
+      display: block;
+      border-radius: 5px;
+    }
+  }
+
+  // Portfolio projects
+  .projects {
+    grid-template-columns: 1fr;
+  }
 }
 
 // Smartphones
