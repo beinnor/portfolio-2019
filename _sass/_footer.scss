@@ -29,4 +29,5 @@ footer {
 
 .copy {
   padding-top: 1rem;
+  padding-bottom: 60px; // this is a stupid hack because of viewport height on chrome mobile.
 }
