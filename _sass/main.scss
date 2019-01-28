@@ -79,9 +79,21 @@ main {
   grid-gap: 0.7rem;
   grid-template-columns: repeat(3, 1fr);
 
+  .item {
+    background: darken($bg-color-light, 10);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+
+    h3 {
+      text-align: center;
+    }
+  }
+
   img {
     width: 100%;
-    border: 3px $bg-color-dark solid;
+    border: 2px $bg-color-dark solid;
     opacity: 0.8;
 
     &:hover {
