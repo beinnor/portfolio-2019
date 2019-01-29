@@ -5,4 +5,4 @@ github_url: https://github.com/beinnor/twitchtv-app
 www_url: https://beinnor.github.io/twitchtv-app
 ---
 
-Another project on [Freecodecamps](http://freecodecamp.org). Uses AJAX to see the status of a number of Twitch Channels.
+Another project on [Freecodecamp](http://freecodecamp.org). Uses AJAX to see the status of a number of Twitch Channels.
