@@ -1,5 +1,5 @@
 - name: Home
-  link: index.hmtl
+  link: index.html
 - name: About
   link: about.html
 - name: Portfolio
